@@ -33,4 +33,11 @@ public class SqMaxTest {
         int result = max.max(1, 3, 2, 4);
         assertThat(result, is(4));
     }
+
+    @Test
+    public void additionalTest() {
+        SqMax max = new SqMax();
+        int result = max.max(4, 3, 8, 1);
+        assertThat(result, is(8));
+    }
 }
