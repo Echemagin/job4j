@@ -26,4 +26,5 @@ public class PrimeNumberTest {
         int count = prime.calc(2);
         assertThat(count, is(1));
     }
+
 }
