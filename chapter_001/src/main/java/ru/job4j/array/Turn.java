@@ -24,4 +24,15 @@ public class Turn {
         }
         return array;
     }
+
+    public char[] back(char[] array) {
+        char temp;
+        for (int i = 0; i < (array.length / 2); i++) {
+            int index = array.length - i - 1;
+            temp = array[i];
+            array[i] = array[index];
+            array[index] = temp;
+        }
+        return array;
+    }
 }
