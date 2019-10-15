@@ -17,14 +17,13 @@ public class EndsWith {
 
     public static boolean endsWith(char[] word, char[] post) {
 
-        Turn turn = new Turn();
-        ArrayChar arrayChar = new ArrayChar();
-
-        word = turn.back(word);
-        post = turn.back(post);
-
-        boolean result = arrayChar.startsWith(word, post);
-
+        boolean result = true;
+        for (int i = word.length - 1; i > word.length - post.length - 1; i--) {
+            if (word[i] != post[i - post.length - 1]) {
+                result = false;
+                break;
+            }
+        }
         return result;
     }
 }
