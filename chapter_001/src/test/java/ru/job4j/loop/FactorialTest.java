@@ -8,13 +8,13 @@ import static org.junit.Assert.assertThat;
 public class FactorialTest {
 
     @Test
-    public void whenFactorialForFiveThenOneHundredTwenty(){
+    public void whenFactorialForFiveThenOneHundredTwenty() {
         Factorial fact = new Factorial();
         assertThat(fact.calc(5), is(120));
     }
 
     @Test
-    public void whenFactorialForZeroThenOne(){
+    public void whenFactorialForZeroThenOne() {
         Factorial fact = new Factorial();
         assertThat(fact.calc(0), is(1));
     }

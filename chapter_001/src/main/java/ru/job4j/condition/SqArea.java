@@ -4,7 +4,7 @@ public class SqArea {
 
     public static double square(int p, int k) {
 
-        int h = (p / (k+1)) / 2;
+        int h = (p / (k + 1)) / 2;
         int l = h * k;
         int s = h * l;
 

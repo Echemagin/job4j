@@ -18,7 +18,7 @@ public class TurnTest {
         Turn turner = new Turn();
         int[] input = new int[] {1, 5, 8, 3, 9};
         int[] result = turner.back(input);
-        int [] expect = new int[] {9, 3, 8, 5, 1};
+        int[] expect = new int[] {9, 3, 8, 5, 1};
         assertThat(result, is(expect));
     }
 }

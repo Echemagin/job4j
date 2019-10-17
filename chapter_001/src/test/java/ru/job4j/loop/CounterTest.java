@@ -8,19 +8,19 @@ import static org.junit.Assert.assertThat;
 public class CounterTest {
 
     @Test
-    public void whenSumEvenNumbersFromOneToTenIsThirty(){
+    public void whenSumEvenNumbersFromOneToTenIsThirty() {
         Counter count = new Counter();
         assertThat(count.add(1, 10), is(30));
     }
 
     @Test
-    public void whenSumEvenNumbersFromFiveToNineIsFourteen(){
+    public void whenSumEvenNumbersFromFiveToNineIsFourteen() {
         Counter count = new Counter();
         assertThat(count.add(5, 9), is(14));
     }
 
     @Test
-    public void whenSumEvenNumbersFromTwelveToSeventeenIsFourtyTwo(){
+    public void whenSumEvenNumbersFromTwelveToSeventeenIsFourtyTwo() {
         Counter count = new Counter();
         assertThat(count.add(12, 17), is(42));
     }

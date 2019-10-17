@@ -18,18 +18,18 @@ public class MatrixCheck {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
                 char sign = board[row][row];
-                int first_counter = 0;
-                int second_counter = 0;
+                int firstCounter = 0;
+                int secondCounter = 0;
                 if (sign == 'X') {
                     for (int cell = 0; cell < board.length; cell++) {
                         if (board[cell][row] == sign) {
-                            first_counter++;
+                            firstCounter++;
                         }
                         if (board[row][cell] == sign) {
-                            second_counter++;
+                            secondCounter++;
                         }
                     }
-                    if (first_counter == board.length || second_counter == board.length) {
+                    if (firstCounter == board.length || secondCounter == board.length) {
                         return true;
                     }
                 }

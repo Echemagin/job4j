@@ -30,52 +30,52 @@ public class Converter {
 
         int euro = rubleToEuro(140);
         int dollar = rubleToDollar(240);
-        int ruble_first = euroToRuble(3);
-        int ruble_second = dollarToRuble(5);
-        double dollar_second = euroToDollar(30);
-        double euro_second = dollarToEuro(40);
+        int rubleFirst = euroToRuble(3);
+        int rubleSecond = dollarToRuble(5);
+        double dollarSecond = euroToDollar(30);
+        double euroSecond = dollarToEuro(40);
 
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("240 rubles are " + dollar + " dollars.");
-        System.out.println("3 euro are " + ruble_first + " rubles.");
-        System.out.println("5 dollars are " + ruble_second + " rubles.");
-        System.out.println("30 euro are " + dollar_second + " dollars.");
-        System.out.println("40 dollars are " + euro_second + " euro.");
+        System.out.println("3 euro are " + rubleFirst + " rubles.");
+        System.out.println("5 dollars are " + rubleSecond + " rubles.");
+        System.out.println("30 euro are " + dollarSecond + " dollars.");
+        System.out.println("40 dollars are " + euroSecond + " euro.");
 
-        int in_1 = 140;
-        int expected_1 = 2;
-        int out_1 = rubleToEuro(in_1);
-        boolean passed_1 = expected_1 == out_1;
-        System.out.println("Test result for rubleToEuro method passed:" + passed_1);
+        int in1 = 140;
+        int expected1 = 2;
+        int out1 = rubleToEuro(in1);
+        boolean passed1 = expected1 == out1;
+        System.out.println("Test result for rubleToEuro method passed:" + passed1);
 
-        int in_2 = 120;
-        int expected_2 = 2;
-        int out_2 = rubleToDollar(in_2);
-        boolean passed_2 = expected_2 == out_2;
-        System.out.println("Test result for rubleToDollar method passed:" + passed_2);
+        int in2 = 120;
+        int expected2 = 2;
+        int out2 = rubleToDollar(in2);
+        boolean passed2 = expected2 == out2;
+        System.out.println("Test result for rubleToDollar method passed:" + passed2);
 
-        int in_3 = 2;
-        int expected_3 = 140;
-        int out_3 = euroToRuble(in_3);
-        boolean passed_3 = expected_3 == out_3;
-        System.out.println("Test result for euroToRuble method passed:" + passed_3);
+        int in3 = 2;
+        int expected3 = 140;
+        int out3 = euroToRuble(in3);
+        boolean passed3 = expected3 == out3;
+        System.out.println("Test result for euroToRuble method passed:" + passed3);
 
-        int in_4 = 2;
-        int expected_4 = 120;
-        int out_4 = dollarToRuble(in_4);
-        boolean passed_4 = expected_4 == out_4;
-        System.out.println("Test result for dollarToRuble method passed:" + passed_4);
+        int in4 = 2;
+        int expected4 = 120;
+        int out4 = dollarToRuble(in4);
+        boolean passed4 = expected4 == out4;
+        System.out.println("Test result for dollarToRuble method passed:" + passed4);
 
-        int in_5 = 3;
-        double expected_5 = 3.5;
-        double out_5 = euroToDollar(in_5);
-        boolean passed_5 = expected_5 == out_5;
-        System.out.println("Test result for euroToDollar method passed:" + passed_5);
+        int in5 = 3;
+        double expected5 = 3.5;
+        double out5 = euroToDollar(in5);
+        boolean passed5 = expected5 == out5;
+        System.out.println("Test result for euroToDollar method passed:" + passed5);
 
-        int in_6 = 7;
-        double expected_6 = 6;
-        double out_6 = dollarToEuro(in_6);
-        boolean passed_6 = expected_6 == out_6;
-        System.out.println("Test result for dollarToEuro method passed:" + passed_6);
+        int in6 = 7;
+        double expected6 = 6;
+        double out6 = dollarToEuro(in6);
+        boolean passed6 = expected6 == out6;
+        System.out.println("Test result for dollarToEuro method passed:" + passed6);
     }
 }
