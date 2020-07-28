@@ -1,5 +1,4 @@
 # job4j
+# change README.md
 
-Changing something
-
-More changes added.
+Объединение зафиксированных изменений
