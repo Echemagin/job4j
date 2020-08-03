@@ -7,34 +7,28 @@ public class PointTest {
 
     @Test
     public void distanceFirst() {
-        int x1 = 11;
-        int x2 = 8;
-        int y1 = 5;
-        int y2 = 1;
+        Point first = new Point(11,5);
+        Point second = new Point(8,1);
         double expected = 5.0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = first.distance(second);
         Assert.assertEquals(expected, out, 0.0);
     }
 
     @Test
     public void distanceSecond() {
-        int x1 = 3;
-        int x2 = 6;
-        int y1 = 4;
-        int y2 = 8;
+        Point first = new Point(3,4);
+        Point second = new Point(6,8);
         double expected = 5.0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = first.distance(second);
         Assert.assertEquals(expected, out, 0.0);
     }
 
     @Test
     public void distanceThird() {
-        int x1 = 5;
-        int x2 = 7;
-        int y1 = 3;
-        int y2 = 3;
+        Point first = new Point(5,3);
+        Point second = new Point(7,3);
         double expected = 2.0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = first.distance(second);
         Assert.assertEquals(expected, out, 0.0);
     }
 
