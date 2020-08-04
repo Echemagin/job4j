@@ -29,4 +29,20 @@ public class MaxTest {
                 is(10)
         );
     }
+
+    @Test
+    public void whenThreeFigures() {
+        assertThat(
+                Max.max(10, 10, 15),
+                is(15)
+        );
+    }
+
+    @Test
+    public void whenFourFigures() {
+        assertThat(
+                Max.max(1, 5, 13, 7),
+                is(13)
+        );
+    }
 }
