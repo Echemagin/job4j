@@ -3,11 +3,11 @@ package ru.job4j.professions;
 public class Builder extends Engineer {
     private int salary;
 
-    public int getSalary(){
+    public int getSalary() {
         return 0;
     }
 
-    public void buildHouse(BuildingPlan plan){
+    public void buildHouse(BuildingPlan plan) {
 
     }
 }

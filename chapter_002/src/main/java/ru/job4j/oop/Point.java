@@ -54,6 +54,6 @@ public class Point {
      * @return - расстояние от одной точки до другой
      */
     public double distance3d(Point that) {
-        return Math.sqrt(Math.pow(this.x - that.x ,2) + Math.pow(this.y - that.y ,2) + Math.pow(this.z - that.z ,2));
+        return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2) + Math.pow(this.z - that.z, 2));
     }
 }
