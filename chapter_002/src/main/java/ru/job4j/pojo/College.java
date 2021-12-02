@@ -10,8 +10,8 @@ public class College {
         andrew.setAdmissionDate(new Date());
 
         System.out.println(
-                "Student: " + andrew.getFullName() + "\n"
-                + "Student's group: " + andrew.getGroup() + "\n"
+                "Student: " + andrew.getFullName() + System.lineSeparator()
+                + "Student's group: " + andrew.getGroup() + System.lineSeparator()
                 + "Student's admission date: " + andrew.getAdmissionDate()
         );
     }
