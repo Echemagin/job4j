@@ -11,22 +11,19 @@ public class Library {
         booksArray[1] = secondBook;
         booksArray[2] = thirdBook;
         booksArray[3] = fourthBook;
-        for (int index = 0; index < booksArray.length; index++) {
-            Book book = booksArray[index];
+        for (Book book : booksArray) {
             System.out.println("Book name is: " + book.getName() + ", its page count is: " + book.getPageCount());
         }
         System.out.println("Rotating first and fourth book");
         Book tempBook = booksArray[0];
         booksArray[0] = booksArray[3];
         booksArray[3] = tempBook;
-        for (int index = 0; index < booksArray.length; index++) {
-            Book book = booksArray[index];
+        for (Book book : booksArray) {
             System.out.println("Book name is: " + book.getName() + ", its page count is: " + book.getPageCount());
         }
         System.out.println("Showing only books which name is \"Clean code\"");
-        for (int index = 0; index < booksArray.length; index++) {
-            Book book = booksArray[index];
-            if (book.getName().equals("Clean code")) {
+        for (Book book : booksArray) {
+            if ("Clean code".equals(book.getName())) {
                 System.out.println("Book name is: " + book.getName() + ", its page count is: " + book.getPageCount());
             }
         }
